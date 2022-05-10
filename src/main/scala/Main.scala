@@ -61,3 +61,8 @@ import scala.util.Try
   println(program.runA(Nil).value)
   val multistageProgram = evalAll(List("1", "2", "+", "3", "*"))
   println(multistageProgram.runA(Nil).value)
+  println(Await.result(getPowerLevel("Jazz").value, 1.second))
+  println(Await.result(getPowerLevel("XXX").value, 1.second))
+  println(tacticalReport("Jazz", "Bumblebee"))
+  println(tacticalReport("Bumblebee", "Hot Rod"))
+  println(tacticalReport("Jazz", "Ironhide"))
