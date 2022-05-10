@@ -66,3 +66,4 @@ import scala.util.Try
   println(tacticalReport("Jazz", "Bumblebee"))
   println(tacticalReport("Bumblebee", "Hot Rod"))
   println(tacticalReport("Jazz", "Ironhide"))
+  testTotalUptime()
